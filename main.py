@@ -11,8 +11,8 @@ q_list = list()
 
 def add_questions_to_list():
     for i in question_data:
-        i_text = i["text"]
-        i_answer = i["answer"]
+        i_text = i["question"]
+        i_answer = i["correct_answer"]
         new_q = Question(i_text, i_answer)
         q_list.append(new_q)
 
